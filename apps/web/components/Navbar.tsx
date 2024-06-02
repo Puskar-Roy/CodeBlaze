@@ -54,7 +54,7 @@ const Navbar = () => {
         <li className="text-white cursor-pointer hover:bg-blue-500 hover:text-white rounded-xl py-2 px-3">
           Contact
         </li>
-        <li className="text-white font-bold cursor-pointer bg-blue-500 rounded-xl py-2 px-3 hover:bg-blue-400">
+        <li className="text-white cursor-pointer bg-blue-500 rounded-xl py-2 px-3 hover:bg-blue-400">
           Sign Up
         </li>
       </ul>

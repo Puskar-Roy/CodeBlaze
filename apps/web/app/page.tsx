@@ -5,6 +5,7 @@ import { loadFull } from "tsparticles";
 import { Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
+import Hero from "../components/Hero";
 
 export default function page() {
     const init = useCallback(async (engine: Engine) => {
@@ -137,6 +138,7 @@ export default function page() {
       />
       <div className="menu">
         <Navbar />
+        <Hero/>
       </div>
     </main>
   );
