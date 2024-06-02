@@ -10,9 +10,15 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "@tsparticles/engine": "3.4.0",
+    "@tsparticles/react": "3.0.0",
+    "@tsparticles/slim": "3.4.0",
     "next": "^14.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "2.10.1",
+    "tsparticles-engine": "^2.12.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.1",

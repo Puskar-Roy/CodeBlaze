@@ -1,3 +1,5 @@
+// "use client"
+// import { useState } from "react";
 import Image from "next/image";
 import logo from "../assets/3.png";
 import { Montserrat, Poppins, Yellowtail } from "next/font/google";
@@ -20,9 +22,10 @@ const ubuntu = Yellowtail({
 });
 
 const Navbar = () => {
+  // const [toggle, settoggle] = useState<boolean>(false);
   return (
     <div className="flex justify-between w-[80%] mx-auto py-8">
-      <div className="flex gap-2 justify-center items-center ">
+      <div className="flex gap-2 justify-center items-center flex-row">
         <Image
           src={logo}
           alt="logo"
@@ -40,16 +43,19 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`${monse.className} flex gap-8 text-white justify-center items-center list-none text-base`}
+        className={`${monse.className} lg:flex gap-8 text-white justify-center items-center list-none text-base hidden `}
       >
-        <li className="text-white hover:bg-orange-400 hover:text-white rounded-xl py-1.5 px-3">
+        <li className="text-white cursor-pointer hover:bg-blue-500 hover:text-white rounded-xl py-2 px-3">
           Home
         </li>
-        <li className="text-white hover:bg-orange-400 hover:text-white rounded-xl py-1.5 px-3">
+        <li className="text-white cursor-pointer hover:bg-blue-500 hover:text-white rounded-xl py-2 px-3">
           About
         </li>
-        <li className="text-white hover:bg-orange-400 hover:text-white rounded-xl py-1.5 px-3">
+        <li className="text-white cursor-pointer hover:bg-blue-500 hover:text-white rounded-xl py-2 px-3">
           Contact
+        </li>
+        <li className="text-white font-bold cursor-pointer bg-blue-500 rounded-xl py-2 px-3 hover:bg-blue-400">
+          Sign Up
         </li>
       </ul>
     </div>
