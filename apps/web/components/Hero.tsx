@@ -1,16 +1,11 @@
 import React from "react";
-import Image from "next/image";
-import heroImage from "../assets/hero.png";
+import { FlipWordsDemo } from "./HeroWord";
 const Hero = () => {
   return (
-    <div className="">
-      <div>
-        <div className="text-white text-6xl">Welcome to CodeBlaze Studios</div>
-        <div className="text-white text-3xl">
-          Transforming visions into vibrant, functional websites using
-          cutting-edge technology.
-        </div>
-      </div>
+    <div className="text-8xl">
+     
+        <FlipWordsDemo />
+      
     </div>
   );
 };

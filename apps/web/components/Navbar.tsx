@@ -24,7 +24,7 @@ const ubuntu = Yellowtail({
 const Navbar = () => {
   // const [toggle, settoggle] = useState<boolean>(false);
   return (
-    <div className="flex justify-between w-[80%] mx-auto py-8">
+    <div className="flex justify-between w-[80%] mx-auto py-8 ">
       <div className="flex gap-2 justify-center items-center flex-row">
         <Image
           src={logo}
@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`${monse.className} lg:flex gap-8 text-white justify-center items-center list-none text-base hidden `}
+        className={`${monse.className} lg:flex gap-8 text-white justify-center items-center list-none text-base hidden z-[20]`}
       >
         <li className="text-white cursor-pointer hover:bg-blue-500 hover:text-white rounded-xl py-2 px-3">
           Home

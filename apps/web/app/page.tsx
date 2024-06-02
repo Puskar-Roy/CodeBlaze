@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Navbar from "../components/Navbar";
 import "../assets/index.css";
 import { loadFull } from "tsparticles";
@@ -8,13 +8,13 @@ import { useCallback } from "react";
 import Hero from "../components/Hero";
 
 export default function page() {
-    const init = useCallback(async (engine: Engine) => {
-      await loadFull(engine);
-    }, []);
+  const init = useCallback(async (engine: Engine) => {
+    await loadFull(engine);
+  }, []);
   return (
-    <main>
+    <main className=" ">
       <Particles
-        className="-z-3"
+        className="z-[-1]"
         init={init}
         options={{
           background: {
@@ -136,9 +136,10 @@ export default function page() {
           detectRetina: true,
         }}
       />
-      <div className="menu">
+
+      <div className="menu z-9">
         <Navbar />
-        <Hero/>
+        <Hero />
       </div>
     </main>
   );
