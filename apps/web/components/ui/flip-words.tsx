@@ -3,6 +3,16 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../utlis/cn";
 let interval: any;
+import {Poppins } from "next/font/google";
+
+
+const alata = Poppins({
+  weight: "700",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+
 
 export const FlipWords = ({
   words,
@@ -62,8 +72,8 @@ export const FlipWords = ({
           position: "absolute",
         }}
         className={cn(
-          "z-10 inline-block relative text-left text-neutral-100 px-2",
-          className
+          "z-10 inline-block relative text-left text-blue-400 px-2",
+          className,alata.className
         )}
         key={currentWord}
       >

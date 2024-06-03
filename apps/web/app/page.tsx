@@ -12,6 +12,7 @@ export default function page() {
     await loadFull(engine);
   }, []);
   return (
+    <main className=" flex justify-between flex-col">
     <main className=" ">
       <Particles
         className="z-[-1]"
@@ -141,6 +142,10 @@ export default function page() {
         <Navbar />
         <Hero />
       </div>
+    </main>
+    <div className="min-h-[50vh]">
+
+    </div>
     </main>
   );
 }
