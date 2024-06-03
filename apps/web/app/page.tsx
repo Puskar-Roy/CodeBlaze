@@ -143,9 +143,9 @@ export default function page() {
         <Hero />
       </div>
     </main>
-    <div className="min-h-[50vh]">
+    {/* <div className="min-h-[50vh]">
 
-    </div>
+    </div> */}
     </main>
   );
 }
